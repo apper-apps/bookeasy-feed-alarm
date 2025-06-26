@@ -5,9 +5,9 @@ import { toast } from 'react-toastify'
 import Button from '@/components/atoms/Button'
 import Input from '@/components/atoms/Input'
 import ApperIcon from '@/components/ApperIcon'
-import businessService from '@/services/api/businessService'
+import { businessService } from '@/services/api/businessService'
 
-const BusinessDashboard = () => {
+function BusinessDashboard() {
   const navigate = useNavigate()
   const [business, setBusiness] = useState(null)
   const [loading, setLoading] = useState(true)
