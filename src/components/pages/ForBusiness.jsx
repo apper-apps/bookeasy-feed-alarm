@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
-import businessService from "@/services/api/businessService";
-import ApperIcon from "@/components/ApperIcon";
-import Button from "@/components/atoms/Button";
-import Input from "@/components/atoms/Input";
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { businessService } from "@/services/api/businessService";
+import ApperIcon from '@/components/ApperIcon'
+import Button from '@/components/atoms/Button'
+import Input from '@/components/atoms/Input'
 
 const ForBusiness = () => {
   const navigate = useNavigate()
