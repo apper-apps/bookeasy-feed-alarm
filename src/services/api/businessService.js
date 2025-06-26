@@ -1,5 +1,5 @@
-import { delay } from '../utils'
-import businessData from '../mockData/businesses.json'
+import { delay } from "@/services/utils";
+import businessData from "@/services/mockData/businesses.json";
 
 let businesses = [...businessData]
 
@@ -56,14 +56,19 @@ export const businessService = {
     return businesses.filter(b => b.type === category)
   },
 
-  async create(business) {
+async create(business) {
     await delay(500)
     const newBusiness = {
       ...business,
-      Id: Math.max(...businesses.map(b => b.Id)) + 1,
+      Id: Math.max(...businesses.map(b => b.Id), 0) + 1,
       rating: 0,
       reviewCount: 0,
-      featured: false
+      featured: false,
+      email: business.email || '',
+      phone: business.phone || '',
+      ownerName: business.ownerName || '',
+      createdAt: new Date().toISOString(),
+      services: business.services || []
     }
     businesses.push(newBusiness)
     return { ...newBusiness }
@@ -77,7 +82,8 @@ export const businessService = {
     }
     
     const updatedBusiness = { ...businesses[index], ...data }
-    delete updatedBusiness.Id // Prevent Id modification
+    // Prevent Id modification
+    updatedBusiness.Id = businesses[index].Id
     businesses[index] = updatedBusiness
     return { ...updatedBusiness }
   },
@@ -91,7 +97,31 @@ export const businessService = {
     
     businesses.splice(index, 1)
     return { success: true }
+  },
+
+  async authenticate(email, password) {
+    await delay(300)
+    const business = businesses.find(b => b.email === email)
+    if (!business) {
+      throw new Error('Business not found')
+    }
+    
+    // In a real app, would verify password hash
+    return {
+      businessId: business.Id,
+      email: business.email,
+      name: business.name
+    }
+  },
+
+  async updateServices(businessId, services) {
+    await delay(400)
+    const index = businesses.findIndex(b => b.Id === parseInt(businessId, 10))
+    if (index === -1) {
+      throw new Error('Business not found')
+    }
+    
+businesses[index].services = services
+    return { ...businesses[index] }
   }
 }
-
-export default businessService

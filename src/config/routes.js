@@ -1,9 +1,11 @@
-import Home from '@/components/pages/Home'
-import Search from '@/components/pages/Search'
-import BusinessProfile from '@/components/pages/BusinessProfile'
-import BookingFlow from '@/components/pages/BookingFlow'
-import MyBookings from '@/components/pages/MyBookings'
-import ForBusiness from '@/components/pages/ForBusiness'
+import BusinessDashboard from "@/components/pages/BusinessDashboard";
+import React from "react";
+import ForBusiness from "@/components/pages/ForBusiness";
+import BookingFlow from "@/components/pages/BookingFlow";
+import Home from "@/components/pages/Home";
+import Search from "@/components/pages/Search";
+import MyBookings from "@/components/pages/MyBookings";
+import BusinessProfile from "@/components/pages/BusinessProfile";
 
 export const routes = {
   home: {
@@ -36,7 +38,7 @@ export const routes = {
     component: BookingFlow,
     hidden: true
   },
-  myBookings: {
+myBookings: {
     id: 'myBookings',
     label: 'My Bookings',
     path: '/bookings',
@@ -49,6 +51,14 @@ export const routes = {
     path: '/for-business',
     icon: 'Building',
     component: ForBusiness
+  },
+  businessDashboard: {
+    id: 'businessDashboard',
+    label: 'Business Dashboard',
+    path: '/business/dashboard',
+    icon: 'BarChart3',
+    component: BusinessDashboard,
+    hidden: true
   }
 }
 
