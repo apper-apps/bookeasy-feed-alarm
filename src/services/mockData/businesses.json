@@ -1,0 +1,187 @@
+[
+  {
+    "Id": 1,
+    "name": "Glamour Hair Studio",
+    "type": "salon",
+    "description": "Modern hair salon specializing in cuts, color, and styling. Our experienced stylists use premium products to help you look and feel your best.",
+    "location": {
+      "address": "123 Main Street",
+      "city": "New York",
+      "area": "Manhattan",
+      "zipCode": "10001",
+      "coordinates": { "lat": 40.7128, "lng": -74.0060 }
+    },
+    "services": [
+      { "Id": 1, "name": "Haircut & Style", "duration": 60, "price": 85, "description": "Professional cut and styling" },
+      { "Id": 2, "name": "Hair Color", "duration": 120, "price": 150, "description": "Full color service with consultation" },
+      { "Id": 3, "name": "Highlights", "duration": 150, "price": 180, "description": "Partial or full highlights" },
+      { "Id": 4, "name": "Blowout", "duration": 45, "price": 45, "description": "Wash, dry, and style" }
+    ],
+    "hours": {
+      "monday": { "open": "09:00", "close": "18:00" },
+      "tuesday": { "open": "09:00", "close": "18:00" },
+      "wednesday": { "open": "09:00", "close": "18:00" },
+      "thursday": { "open": "09:00", "close": "19:00" },
+      "friday": { "open": "09:00", "close": "19:00" },
+      "saturday": { "open": "08:00", "close": "17:00" },
+      "sunday": { "closed": true }
+    },
+    "rating": 4.8,
+    "reviewCount": 142,
+    "images": [
+      "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&h=400&fit=crop"
+    ],
+    "featured": true,
+    "phone": "(555) 123-4567",
+    "email": "info@glamourhair.com"
+  },
+  {
+    "Id": 2,
+    "name": "Bright Smile Dental",
+    "type": "dental",
+    "description": "Comprehensive dental care with a focus on patient comfort. We offer general dentistry, cosmetic procedures, and preventive care in a modern facility.",
+    "location": {
+      "address": "456 Oak Avenue",
+      "city": "Los Angeles",
+      "area": "Beverly Hills",
+      "zipCode": "90210",
+      "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+    },
+    "services": [
+      { "Id": 1, "name": "Dental Cleaning", "duration": 60, "price": 120, "description": "Professional cleaning and examination" },
+      { "Id": 2, "name": "Tooth Filling", "duration": 45, "price": 180, "description": "Composite or amalgam fillings" },
+      { "Id": 3, "name": "Teeth Whitening", "duration": 90, "price": 350, "description": "Professional whitening treatment" },
+      { "Id": 4, "name": "Dental Checkup", "duration": 30, "price": 85, "description": "Routine examination and consultation" }
+    ],
+    "hours": {
+      "monday": { "open": "08:00", "close": "17:00" },
+      "tuesday": { "open": "08:00", "close": "17:00" },
+      "wednesday": { "open": "08:00", "close": "17:00" },
+      "thursday": { "open": "08:00", "close": "17:00" },
+      "friday": { "open": "08:00", "close": "16:00" },
+      "saturday": { "open": "09:00", "close": "14:00" },
+      "sunday": { "closed": true }
+    },
+    "rating": 4.9,
+    "reviewCount": 98,
+    "images": [
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&h=400&fit=crop"
+    ],
+    "featured": true,
+    "phone": "(555) 987-6543",
+    "email": "appointments@brightsmile.com"
+  },
+  {
+    "Id": 3,
+    "name": "Zen Spa & Wellness",
+    "type": "spa",
+    "description": "Tranquil spa offering massage therapy, facial treatments, and wellness services. Escape the stress of daily life and rejuvenate your mind and body.",
+    "location": {
+      "address": "789 Wellness Way",
+      "city": "San Francisco",
+      "area": "Union Square",
+      "zipCode": "94102",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+    },
+    "services": [
+      { "Id": 1, "name": "Swedish Massage", "duration": 60, "price": 120, "description": "Relaxing full-body massage" },
+      { "Id": 2, "name": "Deep Tissue Massage", "duration": 90, "price": 160, "description": "Therapeutic massage for muscle tension" },
+      { "Id": 3, "name": "Facial Treatment", "duration": 75, "price": 95, "description": "Customized facial for all skin types" },
+      { "Id": 4, "name": "Hot Stone Massage", "duration": 90, "price": 175, "description": "Massage with heated stones" }
+    ],
+    "hours": {
+      "monday": { "open": "10:00", "close": "20:00" },
+      "tuesday": { "open": "10:00", "close": "20:00" },
+      "wednesday": { "open": "10:00", "close": "20:00" },
+      "thursday": { "open": "10:00", "close": "20:00" },
+      "friday": { "open": "10:00", "close": "21:00" },
+      "saturday": { "open": "09:00", "close": "21:00" },
+      "sunday": { "open": "10:00", "close": "19:00" }
+    },
+    "rating": 4.7,
+    "reviewCount": 205,
+    "images": [
+      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=400&fit=crop"
+    ],
+    "featured": true,
+    "phone": "(555) 456-7890",
+    "email": "relax@zenspa.com"
+  },
+  {
+    "Id": 4,
+    "name": "Perfect Nails Salon",
+    "type": "salon",
+    "description": "Premium nail salon offering manicures, pedicures, and nail art. We use high-quality products and maintain the highest standards of cleanliness.",
+    "location": {
+      "address": "321 Beauty Boulevard",
+      "city": "Miami",
+      "area": "South Beach",
+      "zipCode": "33139",
+      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+    },
+    "services": [
+      { "Id": 1, "name": "Classic Manicure", "duration": 45, "price": 35, "description": "Traditional manicure with polish" },
+      { "Id": 2, "name": "Gel Manicure", "duration": 60, "price": 55, "description": "Long-lasting gel polish application" },
+      { "Id": 3, "name": "Pedicure", "duration": 60, "price": 45, "description": "Relaxing foot care and polish" },
+      { "Id": 4, "name": "Nail Art", "duration": 30, "price": 25, "description": "Custom nail designs and art" }
+    ],
+    "hours": {
+      "monday": { "open": "10:00", "close": "19:00" },
+      "tuesday": { "open": "10:00", "close": "19:00" },
+      "wednesday": { "open": "10:00", "close": "19:00" },
+      "thursday": { "open": "10:00", "close": "19:00" },
+      "friday": { "open": "10:00", "close": "20:00" },
+      "saturday": { "open": "09:00", "close": "20:00" },
+      "sunday": { "open": "11:00", "close": "18:00" }
+    },
+    "rating": 4.6,
+    "reviewCount": 87,
+    "images": [
+      "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&h=400&fit=crop"
+    ],
+    "featured": false,
+    "phone": "(555) 234-5678",
+    "email": "book@perfectnails.com"
+  },
+  {
+    "Id": 5,
+    "name": "Elite Fitness Personal Training",
+    "type": "fitness",
+    "description": "One-on-one personal training sessions with certified trainers. Achieve your fitness goals with customized workout plans and nutritional guidance.",
+    "location": {
+      "address": "555 Fitness Street",
+      "city": "Chicago",
+      "area": "Downtown",
+      "zipCode": "60601",
+      "coordinates": { "lat": 41.8781, "lng": -87.6298 }
+    },
+    "services": [
+      { "Id": 1, "name": "Personal Training Session", "duration": 60, "price": 95, "description": "One-on-one fitness training" },
+      { "Id": 2, "name": "Fitness Assessment", "duration": 45, "price": 65, "description": "Comprehensive fitness evaluation" },
+      { "Id": 3, "name": "Nutrition Consultation", "duration": 60, "price": 85, "description": "Personalized nutrition planning" },
+      { "Id": 4, "name": "Group Training", "duration": 45, "price": 45, "description": "Small group fitness classes" }
+    ],
+    "hours": {
+      "monday": { "open": "06:00", "close": "21:00" },
+      "tuesday": { "open": "06:00", "close": "21:00" },
+      "wednesday": { "open": "06:00", "close": "21:00" },
+      "thursday": { "open": "06:00", "close": "21:00" },
+      "friday": { "open": "06:00", "close": "20:00" },
+      "saturday": { "open": "07:00", "close": "18:00" },
+      "sunday": { "open": "08:00", "close": "17:00" }
+    },
+    "rating": 4.9,
+    "reviewCount": 156,
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=400&fit=crop"
+    ],
+    "featured": true,
+    "phone": "(555) 345-6789",
+    "email": "train@elitefitness.com"
+  }
+]
